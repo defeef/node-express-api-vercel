@@ -13,7 +13,8 @@ app.get('/', (req, res) => {
 
 app.get('/about', (req, res) => {
   //res.send("About");
-  res.render("/views/pages/about.ejs");
+  res.render("./views/pages/about.ejs");
+  //res.render("/views/pages/about.ejs");
 })
 
 // Export the Express API
