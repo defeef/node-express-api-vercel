@@ -8,7 +8,7 @@ app.listen(PORT, () => {
 })
 
 app.get('/', (req, res) => {
-  res.render("/views/pages/index.ejs");
+  res.send("Main page");
 })
 
 app.get('/about', (req, res) => {
