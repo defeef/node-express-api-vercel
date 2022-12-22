@@ -8,7 +8,9 @@ app.listen(PORT, () => {
 })
 
 app.get('/', (req, res) => {
+  console.log("Render start");
   res.send("Main page");
+  console.log("Render end");
 })
 
 app.get('/about', (req, res) => {
