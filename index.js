@@ -13,7 +13,9 @@ app.get('/', (req, res) => {
 
 app.get('/about', (req, res) => {
   //res.send("About");
+  console.log("Render start");
   res.render("pages/about.ejs");
+  console.log("Render end");
   //res.render("/views/pages/about.ejs");
 })
 
