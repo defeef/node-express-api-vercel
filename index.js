@@ -7,8 +7,6 @@ const express = require('express');
 const app = express();
 const PORT = 4000
 
-const testHTML = "<!DOCTYPE html>\n<html>\n<head>\n<meta charset=\"utf-8\">\n<style>\n</style>\n<title>Document</title>\n</head>\n<body>\n</body>\n</html>"
-
 app.set("view engine", "ejs");
 
 app.get('/', (req, res) => {
@@ -20,7 +18,7 @@ app.get('/', (req, res) => {
 
 app.get('/about', (req, res) => {
   console.log("Render start");
-  res.send(testHTML);
+  res.send("<!DOCTYPE html>\n<html>\n<head>\n<meta charset=\"utf-8\">\n<style>\n</style>\n<title>Document</title>\n</head>\n<body>\n</body>\n</html>");
   //res.render("pages/about");
   console.log("Render end");
 })
