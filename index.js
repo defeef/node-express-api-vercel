@@ -28,7 +28,6 @@ app.get('/test', (req, res) => {
   res.render("pages/test");
   console.log("Render end");
 })
-})
 
 app.listen(PORT, () => {
   console.log(`API listening on PORT ${PORT} `);
