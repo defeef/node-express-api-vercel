@@ -1,5 +1,7 @@
 //import { express } from 'express';
-import { express } from '/node_modules/express';
+import { express } from '/express';
+
+const express = require('/express');
 
 // TODO: fix app
 //const app = express;
@@ -28,4 +30,4 @@ app.listen(PORT, () => {
 
 // Export the Express API
 //export default app
-module.exports = app;
+//module.exports = app;
