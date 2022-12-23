@@ -29,5 +29,5 @@ app.listen(PORT, () => {
 })
 
 // Export the Express API
-//export default app
-//module.exports = app;
+export default app
+module.exports = app;
