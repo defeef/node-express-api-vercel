@@ -1,6 +1,6 @@
 //import { express } from '/express';
 
-const express = require('/express');
+const express = require('express');
 
 // TODO: fix app
 //const app = express;
