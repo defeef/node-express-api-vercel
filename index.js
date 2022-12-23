@@ -18,9 +18,16 @@ app.get('/', (req, res) => {
 
 app.get('/about', (req, res) => {
   console.log("Render start");
-  res.send("<h1>About Page</h1>")
-  //res.render("pages/about");
+  //res.send("<h1>About Page</h1>")
+  res.render("pages/about");
   console.log("Render end");
+})
+
+app.get('/test', (req, res) => {
+  console.log("Render start");
+  res.render("pages/test");
+  console.log("Render end");
+})
 })
 
 app.listen(PORT, () => {
