@@ -18,8 +18,7 @@ app.get('/', (req, res) => {
 
 app.get('/about', (req, res) => {
   console.log("Render start");
-  res.send("<h1>Main Page</h1>")
-  //res.send("<!DOCTYPE html>\n<html>\n<head>\n<meta charset=\"utf-8\">\n<style>\n</style>\n<title>Document</title>\n</head>\n<body>\n</body>\n</html>");
+  res.send("<h1>About Page</h1>")
   //res.render("pages/about");
   console.log("Render end");
 })
