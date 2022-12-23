@@ -11,7 +11,7 @@ app.set("view engine", "ejs");
 
 app.get('/', (req, res) => {
   console.log("Render start");
-  //res.send("Main page");
+  res.send("Main page");
   //res.render("pages/index");
   console.log("Render end");
 })
