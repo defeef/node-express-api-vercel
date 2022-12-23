@@ -3,9 +3,7 @@ const express = require('express');
 const app = express()
 const PORT = 4000
 
-app.listen(PORT, () => {
-  console.log(`API listening on PORT ${PORT} `);
-})
+app.set("view engine", "ejs");
 
 app.get('/', (req, res) => {
   console.log("Render start");
@@ -16,9 +14,12 @@ app.get('/', (req, res) => {
 app.get('/about', (req, res) => {
   //res.send("About");
   console.log("Render start");
-  res.render("pages/about.ejs");
+  res.render("pages/about");
   console.log("Render end");
-  //res.render("/views/pages/about.ejs");
+})
+
+app.listen(PORT, () => {
+  console.log(`API listening on PORT ${PORT} `);
 })
 
 // Export the Express API
