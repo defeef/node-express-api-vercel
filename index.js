@@ -1,4 +1,4 @@
-import express from 'node_modules/express';
+import { express } from 'node_modules/express';
 
 const app = express()
 const PORT = 4000
