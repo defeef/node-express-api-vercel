@@ -7,14 +7,15 @@ app.set("view engine", "ejs");
 
 app.get('/', (req, res) => {
   console.log("Render start");
-  res.send("Main page");
+  //res.send("Main page");
+  res.render("pages/index");
   console.log("Render end");
 })
 
 app.get('/about', (req, res) => {
-  //res.send("About");
   console.log("Render start");
-  //res.render("pages/about");
+  //res.send("About");
+  res.render("pages/about");
   console.log("Render end");
 })
 

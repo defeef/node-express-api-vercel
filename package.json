@@ -1,4 +1,5 @@
 {
+  "type": "module",
   "name": "api-vercel",
   "version": "1.0.0",
   "description": "",
