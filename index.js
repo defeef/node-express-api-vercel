@@ -1,6 +1,9 @@
-import { express } from 'express';
+//import { express } from 'express';
+const express = require("express");
 
-const app = express;
+// TODO: fix app
+//const app = express;
+const app = express();
 const PORT = 4000
 
 app.set("view engine", "ejs");
@@ -25,3 +28,4 @@ app.listen(PORT, () => {
 
 // Export the Express API
 //export default app
+module.exports = app;
